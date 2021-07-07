@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pupparazzi</title>
+    <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+    <div class="app">
+      <h1 class="title">Pupparazzi</h1>
+      <a class="nav" href="/designs/home.html">Home</a>
+      <form class="form" action="/path/to/edit/route" method="post">
+        <img class="img-circle" src="/images/puppy1.jpg" alt="Fido">
+        <label for="name" class="form-item">
+          Name:
+          <input type="text" name="name" value="Fido">
+        </label>
+        
+        <label for="breed" class="form-item">
+          Breed:
+          <input type="text" name="breed" value="Labrador">
+        </label>
+        
+        <label for="owner" class="form-item">
+          Owner:
+          <input type="text" name="owner" value="Fred">
+        </label>
+        
+        <!-- this hidden input allows us to send more data in our post request without the user being able to change that value -->
+        <input type="hidden" name="image" value="/images/puppy1.jpg">
+        
+        <input type="submit" name="" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
+
